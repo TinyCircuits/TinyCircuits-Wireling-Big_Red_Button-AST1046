@@ -27,7 +27,7 @@ void setup() {
 void loop() {
   int buttonState = analogRead(buttonPin);
 
-  if(buttonState == LOW)
+  if(buttonState < 50)
   {
     SerialMonitorInterface.println("Button pressed!");
   }
